@@ -1,6 +1,7 @@
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA dbo TO leokaelementaryadmin;
+
 CREATE TABLE dbo."Users" (
-	"Id" text NOT NULL,
-	"UserPassword" varchar(100) NULL,
+	"UserId" bigserial NOT NULL,
 	"UserRole" varchar(1) NULL,
 	"LastName" varchar(100) NULL,
 	"FirstName" varchar(100) NULL,
@@ -23,5 +24,7 @@ CREATE TABLE dbo."Users" (
 	"LockoutEnabled" bool NOT NULL,
 	"AccessFailedCount" int4 NOT NULL,
 	"IsNews" bool NOT NULL DEFAULT false,
-	CONSTRAINT "PK_Users_Id" PRIMARY KEY ("Id")
+	"UserCode" text NOT NULL DEFAULT ''::text,
+	CONSTRAINT "FK_Users_Id_UserCode" UNIQUE ("UserCode"),
+	CONSTRAINT "PK_Users_Id" PRIMARY KEY ("UserId")
 );
