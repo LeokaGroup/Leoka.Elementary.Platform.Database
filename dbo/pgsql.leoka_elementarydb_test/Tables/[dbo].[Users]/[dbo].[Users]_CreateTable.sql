@@ -1,8 +1,7 @@
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA dbo TO leokaelementaryadmin;
 
-CREATE TABLE dbo."Users" (
+CREATE TABLE IF NOT EXISTS dbo."Users" (
 	"UserId" bigserial NOT NULL,
-	"UserRole" varchar(1) NULL,
 	"LastName" varchar(100) NULL,
 	"FirstName" varchar(100) NULL,
 	"SecondName" varchar(100) NULL,
