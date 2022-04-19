@@ -8,5 +8,22 @@
   <include file="[dbo].[Users]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[dbo].[Roles]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[dbo].[UserRoles]/table_change_log.xml" relativeToChangelogFile="true"/>
-	
+  <include file="[dbo].[AboutPlatform]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[dbo].[MainFonStudent]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[dbo].[MainFonStudentItems]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[dbo].[MainFonStudentItems]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[dbo].[WriteReception]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[dbo].[WhereBegin]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[dbo].[WhereBeginItems]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[dbo].[SmartClassStudent]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[dbo].[SmartClassStudentItems]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[dbo].[MainBestOptions]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[dbo].[MainBestQuestions]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[dbo].[MainBestQuestionOptions]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[dbo].[MainBestQuestionAcceptAnswers]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[dbo].[LandingRequest]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[dbo].[MentorWork]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[dbo].[Footer]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[dbo].[Header]/table_change_log.xml" relativeToChangelogFile="true"/>
+  
 </databaseChangeLog>

@@ -4,14 +4,14 @@ CREATE TABLE IF NOT EXISTS dbo."Roles" (
 	"RoleSysName" varchar(200) NOT NULL DEFAULT 'unknown'
 );
 
-CREATE SEQUENCE dbo.roles_roleid_seq 
+CREATE SEQUENCE IF NOT EXISTS dbo.roles_roleid_seq 
 START WITH -1
 INCREMENT BY 1
 MINVALUE -1
 
-ALTER TABLE ONLY dbo."Roles" 
-ALTER COLUMN "RoleId" 
-SET DEFAULT nextval('dbo.roles_roleid_seq'::regclass);
+-- ALTER TABLE IF EXISTS dbo."Roles" 
+-- ALTER COLUMN IF EXISTS "RoleId" 
+-- SET DEFAULT nextval('dbo.roles_roleid_seq'::regclass);
 
-ALTER TABLE dbo."Roles" 
-ADD CONSTRAINT "Roles_RoleId_Uniq" UNIQUE ("RoleId"); 
+-- ALTER TABLE IF EXISTS dbo."Roles" 
+-- ADD CONSTRAINT "Roles_RoleId_Uniq" UNIQUE ("RoleId"); 
