@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS dbo."MainBestQuestions" 
 (
 	"QuestionId" INT PRIMARY KEY,
-	"MainBestOptionBlockId" INT REFERENCES dbo."MainBestOptions"("BestOptionBlockId"),
+	"MainBestOptionBlockId" INT NOT NULL REFERENCES dbo."MainBestOptions"("BestOptionBlockId"),
 	"MainBestOptionQuestionText" VARCHAR(200) NOT NULL 
 );
 
