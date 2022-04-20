@@ -1,8 +1,8 @@
 CREATE TABLE IF NOT EXISTS dbo."Footer"
 (
 	"FooterId" INT PRIMARY KEY,
-	"FirstFooterTitle" VARCHAR(100) NOT NULL,
-	"LastFooterTitle" VARCHAR(100) NOT NULL,
+	"FirstFooterTitle" VARCHAR(100) NULL,
+	"LastFooterTitle" VARCHAR(100) NULL,
 	"FooterColumnNumber" INT NOT NULL,
 	"FooterItemText" VARCHAR(150) NOT NULL,
 	"FooterItemActionSysName" VARCHAR(150) NOT NULL,
