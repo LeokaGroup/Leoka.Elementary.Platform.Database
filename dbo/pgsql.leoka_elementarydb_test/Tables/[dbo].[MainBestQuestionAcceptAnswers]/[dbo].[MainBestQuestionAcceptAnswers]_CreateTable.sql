@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS dbo."MainBestQuestionAcceptAnswers" 
 (
 	"AnswerId" INT PRIMARY KEY,
-	"QuestionVariantId" INT NOT NULL REFERENCES dbo."MainBestQuestionOptions"("QuestionId"),
+	"QuestionVariantId" INT NOT NULL,
 	"SelectedAnswer" VARCHAR(45) NULL,
 	"UserId" BIGINT NOT NULL 
 );

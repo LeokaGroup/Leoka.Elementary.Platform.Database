@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS dbo."MainBestQuestionOptions"
 (
 	"MainBestQuestionVariantId" INT PRIMARY KEY,
-	"QuestionId" INT NOT NULL REFERENCES dbo."MainBestQuestions"("QuestionId"),
+	"QuestionId" INT NOT NULL,
 	"VariantText" VARCHAR(150) NOT NULL 
 );
 
@@ -9,7 +9,7 @@ CREATE SEQUENCE IF NOT EXISTS dbo.MainBestQuestionOptions_MainBestQuestionVarian
 ALTER TABLE ONLY dbo."MainBestQuestionOptions" 
 ALTER COLUMN "MainBestQuestionVariantId" SET DEFAULT nextval('dbo.MainBestQuestionOptions_MainBestQuestionVariantId_seq'::regclass);
 
-ALTER TABLE IF EXISTS dbo."MainBestQuestionOptions"
-DROP CONSTRAINT IF EXISTS "Uniq_MainBestQuestionOptions_QuestionId";
-ALTER TABLE IF EXISTS dbo."MainBestQuestionOptions"
-ADD CONSTRAINT "Uniq_MainBestQuestionOptions_QuestionId" UNIQUE ("QuestionId");
+-- ALTER TABLE IF EXISTS dbo."MainBestQuestionOptions"
+-- DROP CONSTRAINT IF EXISTS "Uniq_MainBestQuestionOptions_QuestionId";
+-- ALTER TABLE IF EXISTS dbo."MainBestQuestionOptions"
+-- ADD CONSTRAINT "Uniq_MainBestQuestionOptions_QuestionId" UNIQUE ("QuestionId");
