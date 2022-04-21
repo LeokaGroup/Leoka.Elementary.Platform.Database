@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS dbo."MainFonStudentItems" (
-	"ItemId" INT PRIMARY KEY,
+	"ItemId" SERIAL PRIMARY KEY,
 	"FonSubTitleId" INT NOT NULL,
 	"FonSubTitleText" VARCHAR(150) NOT NULL,
 	CONSTRAINT "FK_MainFonStudent_FonSubTitleId" FOREIGN KEY ("FonSubTitleId") REFERENCES dbo."MainFonStudent"("FonSubTitleId")

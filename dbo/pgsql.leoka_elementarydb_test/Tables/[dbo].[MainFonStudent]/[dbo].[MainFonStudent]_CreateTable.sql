@@ -1,9 +1,10 @@
-ALTER TABLE dbo."MainFonStudent" OWNER TO leokaelementaryadmin;
-CREATE TABLE IF NOT EXISTS dbo."MainFonStudent" (
-	"FonId" INT PRIMARY KEY,
-	"FonTitle" VARCHAR(200) NOT NULL,
-	"FonSubTitle" VARCHAR(400) NOT NULL,
-	"FonSubTitleId" INT NOT NULL 
+CREATE TABLE dbo."MainFonStudent" (
+	"FonId" SERIAL NOT NULL,
+	"FonTitle" varchar(200) NOT NULL,
+	"FonSubTitle" varchar(400) NOT NULL,
+	"FonSubTitleId" int4 NOT NULL,
+	CONSTRAINT "MainFonStudent_pkey" PRIMARY KEY ("FonId"),
+	CONSTRAINT "Uniq_MainFonStudent_FonSubTitleId" UNIQUE ("FonSubTitleId")
 );
 
 -- CREATE SEQUENCE IF NOT EXISTS dbo.MainFonStudent_FonId_seq START 1;
