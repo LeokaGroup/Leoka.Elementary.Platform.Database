@@ -1,4 +1,4 @@
-CREATE TABLE dbo."MainFonStudent" (
+CREATE TABLE IF NOT EXISTS dbo."MainFonStudent" (
 	"FonId" SERIAL NOT NULL,
 	"FonTitle" varchar(200) NOT NULL,
 	"FonSubTitle" varchar(400) NOT NULL,
@@ -11,7 +11,7 @@ CREATE TABLE dbo."MainFonStudent" (
 -- ALTER TABLE ONLY dbo."MainFonStudent" 
 -- ALTER COLUMN "FonId" SET DEFAULT nextval('MainFonStudent_FonId_seq'::regclass);
 
-ALTER TABLE IF EXISTS dbo."MainFonStudent"
-DROP CONSTRAINT IF EXISTS "Uniq_MainFonStudent_FonSubTitleId";
-ALTER TABLE IF EXISTS dbo."MainFonStudent"
-ADD CONSTRAINT "Uniq_MainFonStudent_FonSubTitleId" UNIQUE ("FonSubTitleId");
+-- ALTER TABLE IF EXISTS dbo."MainFonStudent"
+-- DROP CONSTRAINT IF EXISTS "Uniq_MainFonStudent_FonSubTitleId";
+-- ALTER TABLE IF EXISTS dbo."MainFonStudent"
+-- ADD CONSTRAINT "Uniq_MainFonStudent_FonSubTitleId" UNIQUE ("FonSubTitleId");

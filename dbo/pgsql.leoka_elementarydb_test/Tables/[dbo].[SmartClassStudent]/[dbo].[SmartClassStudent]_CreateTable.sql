@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS dbo."SmartClassStudent"
 -- ALTER TABLE ONLY dbo."SmartClassStudent" 
 -- ALTER COLUMN "SmartClassId" SET DEFAULT nextval('dbo.SmartClassStudent_SmartClassId_seq'::regclass);
 
-ALTER TABLE IF EXISTS dbo."SmartClassStudent"
-DROP CONSTRAINT IF EXISTS "Uniq_SmartClassStudent_SmartClassItemId";
-ALTER TABLE IF EXISTS dbo."SmartClassStudent"
-ADD CONSTRAINT "Uniq_SmartClassStudent_SmartClassItemId" UNIQUE ("SmartClassItemId");
+-- ALTER TABLE IF EXISTS dbo."SmartClassStudent"
+-- DROP CONSTRAINT IF EXISTS "Uniq_SmartClassStudent_SmartClassItemId";
+-- ALTER TABLE IF EXISTS dbo."SmartClassStudent"
+-- ADD CONSTRAINT "Uniq_SmartClassStudent_SmartClassItemId" UNIQUE ("SmartClassItemId");

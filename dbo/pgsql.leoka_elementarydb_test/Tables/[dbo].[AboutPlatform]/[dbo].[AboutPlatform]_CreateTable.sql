@@ -8,6 +8,6 @@ CREATE TABLE IF NOT EXISTS dbo."AboutPlatform" (
 	"AboutMentorSubTitle" VARCHAR(400) NOT NULL
 );
 
-CREATE SEQUENCE dbo."AboutPlatform_AboutId_seq" START 1;
+CREATE SEQUENCE IF NOT EXISTS dbo."AboutPlatform_AboutId_seq" START 1;
 ALTER TABLE ONLY dbo."AboutPlatform" 
 ALTER COLUMN "AboutId" SET DEFAULT nextval('AboutPlatform_AboutId_seq'::regclass);
