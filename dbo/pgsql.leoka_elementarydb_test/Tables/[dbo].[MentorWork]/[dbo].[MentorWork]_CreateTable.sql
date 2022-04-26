@@ -10,3 +10,6 @@ CREATE TABLE IF NOT EXISTS dbo."MentorWork"
 CREATE SEQUENCE IF NOT EXISTS dbo.MentorWork_MentorWorkId_seq START 1;
 ALTER TABLE ONLY dbo."MentorWork" 
 ALTER COLUMN "MentorWorkId" SET DEFAULT nextval('dbo.MentorWork_MentorWorkId_seq'::regclass);
+
+ALTER TABLE IF EXISTS dbo."MentorWork" 
+ADD COLUMN IF NOT EXISTS "UrlIconMentor" TEXT NULL;
