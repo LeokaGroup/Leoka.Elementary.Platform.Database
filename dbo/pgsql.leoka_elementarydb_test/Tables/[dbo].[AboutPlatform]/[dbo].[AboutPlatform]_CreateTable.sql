@@ -11,3 +11,7 @@ CREATE TABLE IF NOT EXISTS dbo."AboutPlatform" (
 CREATE SEQUENCE IF NOT EXISTS dbo."AboutPlatform_AboutId_seq" START 1;
 ALTER TABLE ONLY dbo."AboutPlatform" 
 ALTER COLUMN "AboutId" SET DEFAULT nextval('AboutPlatform_AboutId_seq'::regclass);
+
+ALTER TABLE IF EXISTS dbo."AboutPlatform"
+ADD COLUMN IF NOT EXISTS "UrlIconMentor" TEXT NULL,
+ADD COLUMN IF NOT EXISTS "UrlIconStudent" TEXT NULL;

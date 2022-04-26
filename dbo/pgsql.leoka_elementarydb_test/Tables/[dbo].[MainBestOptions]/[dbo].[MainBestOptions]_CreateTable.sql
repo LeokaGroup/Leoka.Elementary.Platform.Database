@@ -10,6 +10,3 @@ CREATE TABLE IF NOT EXISTS dbo."MainBestOptions"
 CREATE SEQUENCE IF NOT EXISTS dbo.MainBestOptions_BestOptionId_seq START 1;
 ALTER TABLE ONLY dbo."MainBestOptions" 
 ALTER COLUMN "BestOptionId" SET DEFAULT nextval('dbo.MainBestOptions_BestOptionId_seq'::regclass);
-
-ALTER TABLE IF EXISTS dbo."MainBestOptions" 
-ADD COLUMN "ButtonActionText" VARCHAR(100) NOT NULL DEFAULT '';
