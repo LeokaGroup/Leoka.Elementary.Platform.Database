@@ -25,5 +25,7 @@
   <include file="[dbo].[MentorWork]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[dbo].[Footer]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[dbo].[Header]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[dbo].[MainFonMentor]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[dbo].[MainFonMentorItems]/table_change_log.xml" relativeToChangelogFile="true"/>
   
 </databaseChangeLog>
