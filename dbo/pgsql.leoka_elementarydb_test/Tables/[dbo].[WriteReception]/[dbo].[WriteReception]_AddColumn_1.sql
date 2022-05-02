@@ -1,0 +1,2 @@
+ALTER TABLE IF EXISTS dbo."WriteReception" 
+ADD COLUMN "TypeRole" INT NOT NULL DEFAULT 0;
