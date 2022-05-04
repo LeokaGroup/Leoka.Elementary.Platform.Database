@@ -5,7 +5,16 @@
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
     http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-<include file="dbo/pgsql.leoka_elementarydb_test/databse_change_log.xml" relativeToChangelogFile="true"/>
-<include file="Profile/pgsql.leoka_elementarydb_test/databse_change_log.xml" relativeToChangelogFile="true"/>
+  <changeSet author=""
+            id="[Profile]_CreateSchema.sql"
+            dbms="postgresql">
 
+    <sqlFile encoding="utf8"
+	           endDelimiter="\nGO"
+	           path="[Profile]_CreateSchema.sql"
+	           relativeToChangelogFile="true"
+	           stripComments="false"/>
+
+  </changeSet>
+	
 </databaseChangeLog>
