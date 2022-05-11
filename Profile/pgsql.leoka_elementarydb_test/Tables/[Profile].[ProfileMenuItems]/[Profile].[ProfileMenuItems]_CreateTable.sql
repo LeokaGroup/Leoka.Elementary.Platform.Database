@@ -1,4 +1,4 @@
-CREATE TABLE "Profile"."ProfileMenuItems" (
+CREATE TABLE IF NOT EXISTS "Profile"."ProfileMenuItems" (
 	"ProfileMenuId" serial4 NOT NULL,
 	"ProfileItemUrl" text NULL,
 	"ProfileItemTitle" varchar(200) NOT NULL,
