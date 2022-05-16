@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS "Profile"."MentorTimes" (
+	"TimeId" BIGSERIAL,
+	"TimeStart" TIME NOT NULL,
+	"TimeEnd" TIME NOT NULL,
+	"Day" VARCHAR(100) NOT NULL,
+	"UserId" BIGINT NOT NULL,
+	CONSTRAINT "PK_MentorTimesTimeId" PRIMARY KEY ("TimeId")
+);

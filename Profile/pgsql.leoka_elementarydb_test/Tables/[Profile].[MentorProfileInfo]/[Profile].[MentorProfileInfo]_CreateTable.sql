@@ -7,3 +7,8 @@ CREATE TABLE IF NOT EXISTS "Profile"."MentorProfileInfo" (
 	"Email" varchar(100) NOT NULL,
 	CONSTRAINT "PK_MentorProfileInfoUserProfileInfoId" PRIMARY KEY ("UserProfileInfoId")
 );
+
+ALTER TABLE IF EXISTS "Profile"."MentorProfileInfo"
+ADD COLUMN IF NOT EXISTS "FirstName" VARCHAR(150) NOT NULL,
+ADD COLUMN IF NOT EXISTS "LastName" VARCHAR(150) NOT NULL,
+ADD COLUMN IF NOT EXISTS "SecondName" VARCHAR(150) NOT NULL
