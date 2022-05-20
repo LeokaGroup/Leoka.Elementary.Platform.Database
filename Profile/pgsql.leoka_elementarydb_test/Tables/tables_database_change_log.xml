@@ -19,5 +19,7 @@
   <include file="[Profile].[MentorCertificates]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Profile].[MentorProfileItems]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Profile].[MentorTimes]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[Profile].[DaysWeek]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[Profile].[MentorAboutInfo]/table_change_log.xml" relativeToChangelogFile="true"/>
   
 </databaseChangeLog>

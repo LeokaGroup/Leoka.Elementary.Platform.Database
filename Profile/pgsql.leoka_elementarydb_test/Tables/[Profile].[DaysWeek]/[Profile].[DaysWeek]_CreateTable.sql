@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS "Profile"."DaysWeek" (
+	"DayId" SERIAL,
+	"DayName" VARCHAR(100) NOT NULL,
+	"DaySysName" VARCHAR(100) NOT NULL,
+	"Position" INT NOT NULL,
+	CONSTRAINT "PK_DaysWeekDayId" PRIMARY KEY ("DayId")
+);
