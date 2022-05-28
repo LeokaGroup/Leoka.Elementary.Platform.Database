@@ -6,3 +6,6 @@ CREATE TABLE IF NOT EXISTS "Profile"."MentorProfileItems" (
 	"UserId" BIGINT NOT NULL,
 	CONSTRAINT "PK_MentorProfileItemsItemId" PRIMARY KEY ("ItemId")
 );
+
+ALTER TABLE IF EXISTS "Profile"."MentorProfileItems"
+ADD COLUMN IF NOT EXISTS "ItemNumber" INT NOT NULL DEFAULT 0;
