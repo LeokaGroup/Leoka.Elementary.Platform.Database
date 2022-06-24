@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS "Profile"."MentorGender" (
 	"GenderId" SERIAL,
-	"GenderName" CHAR(1) NOT NULL,
+	"GenderName" VARCHAR(50) NOT NULL,
 	CONSTRAINT "PK_MentorGenderGenderId" PRIMARY KEY ("GenderId")
 );
