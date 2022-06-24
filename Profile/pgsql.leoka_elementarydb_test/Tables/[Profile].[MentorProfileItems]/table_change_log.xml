@@ -6,7 +6,7 @@
     http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
   <changeSet author=""
-            id="[Profile].[MentorProfileItems]_CreateTable_1"
+            id="[Profile].[MentorProfileItems]_CreateTable_2"
             dbms="postgresql">
 
     <sqlFile encoding="utf8"

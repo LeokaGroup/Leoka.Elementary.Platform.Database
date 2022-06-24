@@ -21,5 +21,8 @@
   <include file="[Profile].[MentorTimes]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Profile].[DaysWeek]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Profile].[MentorAboutInfo]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[Profile].[MentorAge]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[Profile].[MentorGender]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[Profile].[StudentComments]/table_change_log.xml" relativeToChangelogFile="true"/>
   
 </databaseChangeLog>
