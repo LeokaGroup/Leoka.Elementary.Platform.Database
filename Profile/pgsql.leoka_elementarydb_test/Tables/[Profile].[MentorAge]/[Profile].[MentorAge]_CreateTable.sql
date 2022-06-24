@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS "Profile"."MentorAge" (
-	"AgeId" BIGSERIAL,
-	"StartAge" INT NOT NULL,
-	"EndAge" INT NOT NULL,
+	"AgeId" SERIAL,
+	"StartAge" VARCHAR(50) NOT NULL,
+	"EndAge" VARCHAR(50) NOT NULL,
 	CONSTRAINT "PK_MentorAgeAgeId" PRIMARY KEY ("AgeId")
 );
