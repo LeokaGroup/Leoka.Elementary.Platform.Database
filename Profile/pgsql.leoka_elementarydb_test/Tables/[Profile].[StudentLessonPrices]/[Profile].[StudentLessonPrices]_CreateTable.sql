@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS "Profile"."StudentLessonPrices" (
+	"PriceId" BIGSERIAL,
+	"Price" NUMERIC NOT NULL DEFAULT 0,
+	"Unit" VARCHAR(50) NOT NULL DEFAULT 'руб.',
+	"UserId" BIGINT NOT NULL,
+	CONSTRAINT "PK_PriceId" PRIMARY KEY ("PriceId")
+);

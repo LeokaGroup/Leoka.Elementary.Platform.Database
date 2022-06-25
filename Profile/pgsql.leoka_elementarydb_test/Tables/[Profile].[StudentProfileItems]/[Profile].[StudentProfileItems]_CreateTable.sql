@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS "Profile"."StudentProfileItems" (
+	"ItemId" BIGSERIAL,
+	"Position" INT4 NOT NULL DEFAULT 0,
+	"UserId" BIGINT NOT NULL,
+	"ItemNumber" INT4 NOT NULL DEFAULT 0,
+	CONSTRAINT "PK_ItemId" PRIMARY KEY ("ItemId")
+);
