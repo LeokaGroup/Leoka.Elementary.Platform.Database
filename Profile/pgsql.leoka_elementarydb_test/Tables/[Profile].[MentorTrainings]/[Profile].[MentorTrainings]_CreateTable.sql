@@ -2,7 +2,6 @@ CREATE TABLE IF NOT EXISTS "Profile"."MentorTrainings" (
 	"TrainingId" BIGSERIAL,
 	"UserId" BIGINT NOT NULL,
 	CONSTRAINT "PK_MentorTrainingsTrainingId" PRIMARY KEY ("TrainingId")
-	-- CONSTRAINT "FK_PurposeTrainingsPurposeId" FOREIGN KEY ("PurposeId")
 );
 
 -- ALTER TABLE IF EXISTS "Profile"."MentorTrainings"
