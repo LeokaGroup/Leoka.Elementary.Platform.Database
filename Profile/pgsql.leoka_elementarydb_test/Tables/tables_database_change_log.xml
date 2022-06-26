@@ -13,7 +13,7 @@
   <include file="[Profile].[MentorProfileInfo]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Profile].[MentorLessonPrices]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Profile].[MentorLessonDurations]/table_change_log.xml" relativeToChangelogFile="true"/>
-  <include file="[Profile].[MentorTrainings]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[Profile].[UserTrainings]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Profile].[MentorEducations]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Profile].[MentorExperience]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Profile].[MentorCertificates]/table_change_log.xml" relativeToChangelogFile="true"/>
