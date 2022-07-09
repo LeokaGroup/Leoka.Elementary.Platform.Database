@@ -6,12 +6,12 @@
     http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
   <changeSet author=""
-            id="[Profile].[StudentLessonPrices]_CreateTable"
+            id="[LessonTemplates].[LessonUserTemplates]_CreateTable"
             dbms="postgresql">
 
     <sqlFile encoding="utf8"
 	           endDelimiter="\nGO"
-	           path="[Profile].[StudentLessonPrices]_CreateTable.sql"
+	           path="[LessonTemplates].[LessonUserTemplates]_CreateTable.sql"
 	           relativeToChangelogFile="true"
 	           stripComments="false"/>
   </changeSet>

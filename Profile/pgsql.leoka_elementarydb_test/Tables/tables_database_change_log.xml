@@ -11,7 +11,7 @@
   <include file="[Profile].[LessonsDuration]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Profile].[PurposeTrainings]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Profile].[MentorProfileInfo]/table_change_log.xml" relativeToChangelogFile="true"/>
-  <include file="[Profile].[MentorLessonPrices]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[Profile].[UserLessonPrices]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Profile].[MentorLessonDurations]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Profile].[UserTrainings]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Profile].[MentorEducations]/table_change_log.xml" relativeToChangelogFile="true"/>
@@ -27,7 +27,8 @@
   <include file="[Profile].[StudentAgeMentor]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Profile].[StudentGenderMentor]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Profile].[StudentProfileItems]/table_change_log.xml" relativeToChangelogFile="true"/>
-  <include file="[Profile].[StudentLessonPrices]/table_change_log.xml" relativeToChangelogFile="true"/>
   <include file="[Profile].[StudentLessonDurations]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[LessonTemplates].[LessonTemplates]/table_change_log.xml" relativeToChangelogFile="true"/>
+  <include file="[LessonTemplates].[LessonUserTemplates]/table_change_log.xml" relativeToChangelogFile="true"/>
   
 </databaseChangeLog>

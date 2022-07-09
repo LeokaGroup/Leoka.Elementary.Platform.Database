@@ -1,4 +1,4 @@
-<databaseChangeLog
+   <databaseChangeLog
     xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
@@ -6,27 +6,14 @@
     http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
   <changeSet author=""
-            id="[Profile]_CreateSchema.sql"
+            id="[LessonTemplates].[LessonTemplates]_CreateTable"
             dbms="postgresql">
 
     <sqlFile encoding="utf8"
 	           endDelimiter="\nGO"
-	           path="[Profile]_CreateSchema.sql"
+	           path="[LessonTemplates].[LessonTemplates]_CreateTable.sql"
 	           relativeToChangelogFile="true"
 	           stripComments="false"/>
-
   </changeSet>
-
-   <changeSet author=""
-            id="[LessonTemplates]_CreateSchema.sql"
-            dbms="postgresql">
-
-    <sqlFile encoding="utf8"
-	           endDelimiter="\nGO"
-	           path="[LessonTemplates]_CreateSchema.sql"
-	           relativeToChangelogFile="true"
-	           stripComments="false"/>
-
-  </changeSet>
-	
+ 
 </databaseChangeLog>
